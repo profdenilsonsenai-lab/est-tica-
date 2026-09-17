@@ -1,0 +1,6 @@
+{
+  "name": "Clínica & Instituto Dra. Paula Fischer",
+  "description": "Clínica de estética avançada e centro de treinamento e imersão VIP para profissionais da saúde estética liderado pela Dra. Paula Fischer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
