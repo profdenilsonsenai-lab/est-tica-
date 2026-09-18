@@ -33,7 +33,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
       ? `Olá equipe da Dra. Paula Fischer! Meu nome é ${name}, tenho interesse na vaga/informações do treinamento: "${item}". Meu WhatsApp é ${phone}. Poderiam me enviar valores e próximas datas?`
       : `Olá equipe da Dra. Paula Fischer! Meu nome é ${name} e gostaria de agendar uma consulta para: "${item}". Meu WhatsApp é ${phone}. Quais os horários disponíveis?`;
 
-    window.open(`https://wa.me/5511984521920?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/5511966209116?text=${encodeURIComponent(msg)}`, '_blank');
     onClose();
   };
 

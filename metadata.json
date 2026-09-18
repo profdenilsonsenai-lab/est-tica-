@@ -1,6 +1,6 @@
 {
-  "name": "Clínica & Instituto Dra. Paula Fischer",
-  "description": "Clínica de estética avançada e centro de treinamento e imersão VIP para profissionais da saúde estética liderado pela Dra. Paula Fischer.",
+  "name": "Dra. Paula Fischer - Biomédica Esteta | CRBM 57426",
+  "description": "Consultório clínico e imersões profissionais conduzidos pela Dra. Paula Fischer, biomédica esteta especialista em Plexr GMW, Laser CO2 Fusion e protocolos ortomoleculares no Tatuapé, São Paulo.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

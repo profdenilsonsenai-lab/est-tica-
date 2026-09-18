@@ -20,62 +20,69 @@ export const Footer: React.FC = () => {
               Dra. Paula Fischer
             </h3>
             <p className="text-[11px] uppercase tracking-[0.25em] text-[#C5A059] font-medium mb-4">
-              Clínica & Instituto de Estética Avançada
+              Biomédica Esteta • CRBM 57426
             </p>
             <p className="text-xs text-[#99897E] leading-relaxed mb-4">
-              Referência em harmonização facial anatômica naturalista e mentoria prática VIP 
-              para profissionais da saúde estética.
+              Tecnologias de alta performance — Plexr GMW, Laser CO2 Fracionado Fusion e Protocolo Ortomolecular — aplicadas com rigor científico e sensibilidade estética.
             </p>
             <div className="text-[11px] text-[#A8988C] font-mono bg-[#1E1815] p-3 rounded-xl border border-[#302621]">
               <strong>Responsável Técnica:</strong> Dra. Paula Fischer<br />
-              {DOCTOR_INFO.registration}
+              {DOCTOR_INFO.registration} • Tatuapé, São Paulo - SP
             </div>
           </div>
 
           {/* Quick links: Treinamentos */}
           <div className="lg:col-span-3">
             <h4 className="text-xs font-bold uppercase tracking-widest text-[#D8B46C] mb-4">
-              Instituto & Ensino
+              Cursos & Imersões Presenciais
             </h4>
             <ul className="space-y-2 text-xs text-[#C5B7AC]">
               <li>
                 <button
                   onClick={() => scrollTo('treinamentos')}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  Imersão VIP Full Face Hands-On
+                  Curso Blefaroplastia sem Cortes (Plexr GMW)
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => scrollTo('treinamentos')}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  Masterclass Bioestimuladores & Fios
+                  Curso Ninfoplastia sem Cortes com Plexr
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => scrollTo('treinamentos')}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  VIP 1-on-1 Mentorship Individual
+                  Curso Laser CO2 Fracionado Facial Fusion
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => scrollTo('treinamentos')}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  Consultório de Alto Padrão & Gestão
+                  Curso Laser CO2 Cicatrizes + Ortomolecular
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => scrollTo('metodologia')}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  onClick={() => scrollTo('treinamentos')}
+                  className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  Ultrassonografia & Zonas de Risco
+                  Curso Laser CO2 — Estética Íntima
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollTo('treinamentos')}
+                  className="hover:text-white transition-colors cursor-pointer text-left"
+                >
+                  Locação de Equipamentos (FT Laser Tech)
                 </button>
               </li>
             </ul>
@@ -138,11 +145,35 @@ export const Footer: React.FC = () => {
             <p className="text-xs text-[#C5B7AC] mb-2 leading-relaxed">
               {CLINIC_CONTACT.address}
             </p>
-            <p className="text-xs text-[#C5B7AC] mb-2">
-              WhatsApp: <strong className="text-white">{CLINIC_CONTACT.phone}</strong>
+            <p className="text-xs text-[#C5B7AC] mb-2 flex items-center gap-1.5">
+              <span>WhatsApp:</span>
+              <a 
+                href={CLINIC_CONTACT.whatsappUrl} 
+                target="_blank" 
+                rel="noreferrer"
+                className="text-emerald-400 font-bold hover:underline inline-flex items-center gap-1"
+              >
+                <span>{CLINIC_CONTACT.phone}</span>
+                <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.2 rounded font-normal">Online</span>
+              </a>
             </p>
-            <p className="text-xs text-[#C5B7AC] mb-4">
-              Instagram: <strong className="text-white">{CLINIC_CONTACT.instagram}</strong>
+            <p className="text-xs text-[#C5B7AC] mb-2 flex items-center gap-1.5">
+              <Mail className="w-3.5 h-3.5 text-[#D8B46C]" />
+              <a href={`mailto:${CLINIC_CONTACT.email}`} className="text-[#C5B7AC] hover:text-white transition-colors truncate">
+                {CLINIC_CONTACT.email}
+              </a>
+            </p>
+            <p className="text-xs text-[#C5B7AC] mb-4 flex items-center gap-1.5">
+              <Instagram className="w-3.5 h-3.5 text-[#D8B46C]" />
+              <span>Instagram:</span>
+              <a 
+                href={CLINIC_CONTACT.instagramUrl} 
+                target="_blank" 
+                rel="noreferrer"
+                className="text-white font-bold hover:text-[#D8B46C] hover:underline"
+              >
+                {CLINIC_CONTACT.instagram}
+              </a>
             </p>
             <div className="flex items-center gap-2 text-xs text-[#948479]">
               <ShieldCheck className="w-4 h-4 text-[#D8B46C]" />
@@ -151,22 +182,22 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Ethical Medical Disclaimer */}
+        {/* Ethical Professional Disclaimer */}
         <div className="pt-8 pb-4 text-[11px] text-[#7A6B62] leading-relaxed space-y-2 text-justify sm:text-left">
           <p>
             <strong>Aviso Legal Ético:</strong> As informações contidas neste website têm objetivo estritamente 
-            educativo e institucional, em consonância com as resoluções vigentes do Conselho Federal de Medicina (CFM) 
-            e Conselhos Federais das Classes da Saúde autorizadas. Os resultados de procedimentos estéticos e imersões de 
-            treinamento dependem de avaliação anatômica individual, histórico clínico e características biológicas particulares, 
+            educativo e institucional, em consonância com as resoluções vigentes do Conselho Federal de Biomedicina (CFBM), 
+            demais Conselhos de Classe da Saúde autorizados e normativas da ANVISA. Os resultados de procedimentos estéticos e imersões de 
+            treinamento dependem de avaliação individualizada, histórico clínico e características biológicas particulares, 
             sendo vedada qualquer promessa absoluta de resultado. Os treinamentos são direcionados exclusivamente a profissionais 
-            graduados e habilitados nos termos da legislação sanitária brasileira.
+            graduados e habilitados nos termos da legislação brasileira.
           </p>
         </div>
 
         {/* Bottom bar */}
         <div className="pt-6 border-t border-[#241D19] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#7A6C63]">
           <div>
-            © {new Date().getFullYear()} Clínica & Instituto Dra. Paula Fischer. Todos os direitos reservados.
+            © {new Date().getFullYear()} Consultório & Imersões Dra. Paula Fischer. Todos os direitos reservados.
           </div>
           <div className="flex items-center gap-4 text-xs">
             <span>Privacidade & LGPD</span>

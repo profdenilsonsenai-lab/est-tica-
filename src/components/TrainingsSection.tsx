@@ -14,7 +14,7 @@ import {
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
-import clinicTrainingPhoto from '../assets/images/clinic_training_workshop_1789684323842.jpg';
+import draPaulaAlunasPhoto from '../assets/images/dra_paula_fischer_alunas.jpg';
 
 interface TrainingsSectionProps {
   onOpenContactModal: (interest?: 'training' | 'clinic', selectedItem?: string) => void;
@@ -45,34 +45,37 @@ export const TrainingsSection: React.FC<TrainingsSectionProps> = ({ onOpenContac
           </h2>
           <p className="text-[#594C45] text-base md:text-lg leading-relaxed">
             Metodologia hands-on desenvolvida pela <strong>Dra. Paula Fischer</strong> com turmas 
-            ultrarraduzidas (2 a 4 alunos) e prática real em pacientes-modelo. Elimine a insegurança 
-            de intercorrências e atinja a perfeição técnica.
+            exclusivas (1 a 4 alunos) e prática real em tecnologias de ponta e pacientes-modelo. Domine 
+            Laser CO2 Fracionado Fusion, Plexr GMW e Protocolos Ortomoleculares.
           </p>
         </div>
 
         {/* Highlight Banner: Why our training is different */}
         <div className="mb-16 bg-white rounded-2xl p-6 md:p-8 border border-[#E3DACD] shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-5 rounded-xl overflow-hidden shadow-md">
+            <div className="lg:col-span-5 rounded-2xl overflow-hidden shadow-md border border-[#E0D5C5] relative">
               <img
-                src={clinicTrainingPhoto}
-                alt="Treinamento VIP Hands-on na Clínica Dra. Paula Fischer"
-                className="w-full h-64 md:h-72 object-cover"
+                src={draPaulaAlunasPhoto}
+                alt="Dra. Paula Fischer em imersão prática com alunas habilitadas"
+                className="w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] object-cover object-center"
                 referrerPolicy="no-referrer"
               />
+              <div className="absolute bottom-3 left-3 bg-[#1F1916]/85 backdrop-blur-xs text-[#E8D39E] px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">
+                Prática Hands-On Real com Alunas
+              </div>
             </div>
 
             <div className="lg:col-span-7">
               <span className="text-xs font-semibold uppercase tracking-widest text-[#9E7835] block mb-2">
-                O Diferencial do Instituto
+                O Diferencial da Formação
               </span>
               <h3 className="text-2xl font-serif font-semibold text-[#1F1916] mb-4">
-                Você não assiste da plateia. Você injeta com a Dra. Paula guiando sua mão.
+                Você não assiste da plateia. Você opera as tecnologias com a Dra. Paula Fischer guiando cada parâmetro.
               </h3>
               <p className="text-[#5A4E46] text-sm md:text-base leading-relaxed mb-6">
-                Muitos cursos teóricos deixam o profissional desamparado na hora de aplicar no consultório.
-                No Instituto Dra. Paula Fischer, nós disponibilizamos os pacientes, os produtos das 
-                melhores marcas mundiais e o ultrassom dermatológico para visualização anatômica em tempo real.
+                Cursos e imersões presenciais realizados no Brasil e no exterior, destinados a profissionais
+                da área da saúde habilitados, que desejam dominar as tecnologias de plasma real e Laser CO2
+                com segurança, rigor científico e aplicação prática clínica imediata.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm text-[#3E342F] font-medium">
@@ -241,7 +244,7 @@ export const TrainingsSection: React.FC<TrainingsSectionProps> = ({ onOpenContac
         <div className="mt-14 bg-[#1F1916] text-[#F3EFE9] rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="max-w-2xl">
             <span className="text-xs uppercase tracking-widest text-[#D4B066] font-semibold block mb-1">
-              Atendimento Dedicado à Carreira Médica
+              Atendimento Dedicado à Carreira Profissional & Alunos VIP
             </span>
             <h3 className="text-2xl sm:text-3xl font-serif font-semibold text-white mb-2">
               Deseja uma consultoria sobre qual treinamento é ideal para o seu momento?

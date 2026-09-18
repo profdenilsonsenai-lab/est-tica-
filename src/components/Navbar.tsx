@@ -83,8 +83,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="text-xl md:text-2xl font-serif tracking-[0.2em] font-semibold text-[#1F1916] uppercase leading-none">
               Dra. Paula Fischer
             </span>
-            <span className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] text-[#8C6D37] font-medium mt-1">
-              Clínica & Instituto de Treinamentos
+            <span className="text-[10px] md:text-[11px] uppercase tracking-[0.25em] text-[#8C6D37] font-medium mt-1">
+              Biomédica Esteta • CRBM 57426
             </span>
           </a>
 

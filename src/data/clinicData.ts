@@ -2,321 +2,333 @@ import { TrainingCourse, ClinicalProcedure, Testimonial, FaqItem } from '../type
 
 export const DOCTOR_INFO = {
   name: 'Dra. Paula Fischer',
-  title: 'Médica Especialista em Estética Avançada & Mentora de Injetores',
-  registration: 'CRM 148.920 / RQE Especialista',
+  title: 'Biomédica Esteta • CRBM 57426 • Especialista em Laser CO2 Fusion, Plexr GMW e Terapias Regenerativas',
+  registration: 'CRBM 57426 • Biomédica Esteta',
+  city: 'Tatuapé, São Paulo - SP',
   experienceYears: 12,
   trainedProfessionals: 850,
-  treatedPatients: 3800,
-  satisfactionRate: 99.4,
-  bio: 'Pioneira em protocolos de harmonização anatômica sutil e referência nacional no ensino prático de injetáveis. A Dra. Paula Fischer construiu sua carreira pautada na medicina de precisão, segurança vascular e na recusa absoluta de resultados padronizados. Criadora do Método Fischer de Mapeamento Tridimensional da Face, já treinou centenas de médicos e profissionais habilitados do Brasil e exterior.',
+  treatedPatients: 4200,
+  satisfactionRate: 99.6,
+  bio: 'Biomédica esteta com formação avançada em tecnologias de plasma, laser e protocolos ortomoleculares, a Dra. Paula Fischer une rigor científico à sensibilidade de quem entende que cada procedimento é único — porque cada pessoa é única. Especialista certificada nas tecnologias Plexr GMW e Laser CO2 Fracionado Fusion, atua em seu consultório no Tatuapé (São Paulo) e na formação de profissionais da saúde, com imersões presenciais realizadas no Brasil e no exterior.',
   differentials: [
     {
-      title: 'Segurança Anatômica & Ultrassom',
-      description: 'Mapeamento ecográfico vascular facial e protocolos estritos de prevenção e conduta imediata em intercorrências.'
+      title: 'Ciência, Tecnologia & Resultados Reais',
+      description: 'Tecnologias de alta performance — Plexr GMW, Laser CO2 Fracionado Fusion e Protocolo Ortomolecular — aplicadas com rigor científico.'
     },
     {
-      title: 'Turmas Ultra VIP de 2 a 4 Alunos',
-      description: 'Atenção 100% individualizada com prática real em múltiplos pacientes-modelo fornecidos pela clínica.'
+      title: 'Especialista em Plexr GMW & Laser CO2',
+      description: 'Pioneirismo em blefaroplastia e ninfoplastia sem cortes com plasma sublimativo real e fototermólise fracionada.'
     },
     {
-      title: 'Elegância e Naturalidade',
-      description: 'Filosofia que rejuvenesce preservando a identidade, sem estigmas de procedimentos ou volumes excessivos.'
+      title: 'Cursos & Imersões Presenciais VIP',
+      description: 'Capacitação prática hands-on exclusiva para profissionais da saúde habilitados, com certificação chancelada.'
     },
     {
-      title: 'Mentoria Vitalícia Pós-Treinamento',
-      description: 'Acesso direto à Dra. Paula e comunidade médica exclusiva para discussão de casos clínicos e suporte de diagnóstico.'
+      title: 'Locação Profissional FT Laser Tech',
+      description: 'Disponibilização de equipamentos de ponta (Laser CO2 e Plexr) com suporte técnico especializado para clínicas.'
     }
+  ],
+  degrees: [
+    'Biomédica Esteta — CRBM 57426',
+    'Especialista em Laser CO2 Fracionado Fusion',
+    'Especialista Certificada em Plexr GMW (Plasma Sublimativo)',
+    'Especialista em Protocolo Ortomolecular para Estrias e Cicatrizes',
+    'Mentora de Imersões Clínicas no Brasil e Exterior'
   ]
 };
 
 export const COURSES: TrainingCourse[] = [
   {
-    id: 'imersao-full-face',
-    title: 'Imersão VIP Full Face Hands-On',
-    subtitle: 'Do Planejamento Tridimensional à Execução Perfeita de Injetáveis',
-    badge: 'Mais Procurado • Turma VIP',
+    id: 'imersao-laser-co2',
+    title: 'Imersão Laser CO2 Fracionado Fusion',
+    subtitle: 'Rejuvenescimento Facial, Cicatrizes de Acne, Estrias e Estética Íntima',
+    badge: 'Padrão-Ouro • Alta Demanda',
     duration: '2 Dias Intensivos (18 Horas)',
-    targetAudience: 'Médicos, Biomédicos, Farmacêuticos e Dentistas HOF',
+    targetAudience: 'Médicos, Biomédicos, Farmacêuticos, Fisioterapeutas e Enfermeiros Estetas',
     maxStudents: 4,
-    highlight: 'Prática real em 8 a 10 pacientes-modelo por turma',
-    description: 'Capacitação prática imersiva que ensina o raciocínio anatômico global da face. Aprenda a avaliar proporções, diagnosticar vetores de envelhecimento e executar toxina botulínica avançada, preenchimento com ácido hialurônico em camadas profundas e superficiais com total confiança.',
+    highlight: 'Prática supervisionada direta com equipamento Laser CO2 Fusion em pacientes reais',
+    description: 'A formação definitiva para dominar o padrão-ouro em rejuvenescimento ablativo e remodelamento dérmico. Aprenda os parâmetros ideais de densidade de pulso, energia e fluência, além de protocolos de segurança absoluta e prevenção de intercorrências.',
     modules: [
-      'Anatomia Topográfica Aplicada e Zonas de Perigo Facial',
-      'Toxina Botulínica Avançada: Terço Superior, Inferior, Pescoço e Microdoses',
-      'Preenchimento em Múltiplos Planos (Malar, Mento, Mandíbula, Têmporas e Lábios)',
-      'Uso de Cânulas vs. Agulhas: Reologia e Escolha dos Produtos Ideais',
-      'Ultrassonografia Dermatológica e Protocolo de Dissolução com Hialuronidase',
-      'Prática Hands-On Clínica Completa com Pacientes Fornecidos'
+      'Física do Laser e Fototermólise Seletiva Fracionada',
+      'Parâmetros e Calibração do Laser CO2 Fusion para diferentes fototipos',
+      'Tratamento de Rugas Profundas, Linhas Perioculares e Periorais',
+      'Remodelação de Cicatrizes de Acne, Poros Dilatados e Estrias',
+      'Protocolos Associados com PRP Autólogo e Farmacologia Regenerativa',
+      'Prática Hands-On Clínica Completa em Múltiplos Casos Reais'
     ],
     includes: [
-      'Apostila Clínica e Atlas de Zonas Anatômicas de Risco',
-      'Todos os materiais e produtos premium inclusos para a prática',
-      'Pacientes-modelo selecionados pela equipe do instituto',
-      'Certificado de Capacitação Chancelado',
-      'Mentoria contínua em grupo privado por 12 meses',
-      'Coffee break gourmet e almoço executivo inclusos'
+      'Apostila Clínica completa com fichas de parametrização',
+      'Todos os materiais de apoio e EPIs necessários',
+      'Pacientes-modelo selecionados pela equipe clínica',
+      'Certificado de Especialista em Laser CO2 Fusion',
+      'Acesso à consultoria de locação com condições especiais FT Laser Tech',
+      'Mentoria em grupo privado para discussão de casos clínicos'
     ],
     nextDate: '24 e 25 de Outubro (Restam 2 vagas)',
     investmentNote: 'Condições facilitadas de parcelamento e desconto especial à vista.'
   },
   {
-    id: 'masterclass-bioestimuladores',
-    title: 'Masterclass Bioestimuladores & Fios de Sustentação',
-    subtitle: 'Arquitetura do Colágeno: Hidroxiapatita, PLLA e Fios de Tração',
-    badge: 'Avançado de Alta Demanda',
+    id: 'masterclass-plexr-gmw',
+    title: 'Masterclass Plexr GMW: Blefaroplastia sem Cortes',
+    subtitle: 'Plasma Sublimativo Real para Pálpebras, Ninfoplastia e Subablação Cutânea',
+    badge: 'Tecnologia Exclusiva • VIP',
     duration: '1 Dia de Imersão Prática (9 Horas)',
-    targetAudience: 'Injetores que já dominam o básico e buscam resultados de alto ticket',
+    targetAudience: 'Profissionais habilitados em procedimentos estéticos e cirúrgicos não invasivos',
     maxStudents: 3,
-    highlight: 'Domínio de técnicas com Radiesse, Sculptra, Elleva e Fios de PDO',
-    description: 'O segredo da sustentação tecidual sem volumização exagerada. Domine os vetores mecânicos e bioquímicos de regeneração dérmica com diluições personalizadas, hiperdiluição corporal e facial, e ancoragem estratégica com fios espiculados.',
+    highlight: 'Lifting palpebral sem bisturi, sem anestesia geral e com recuperação ambulatorial rápida',
+    description: 'Aprenda a aplicar o plasma sublimativo autêntico do Plexr GMW. Técnica não cirúrgica de alta precisão que retrai a pele flácida da pálpebra superior e inferior, realiza ninfoplastia sem cortes e remove lesões cutâneas benignas sem cicatrizes.',
     modules: [
-      'Bioquímica comparada: Hidroxiapatita de Cálcio x Ácido Poli-L-Láctico (PLLA)',
-      'Diluições e Técnicas de Vetorização em Leque e Cânula 22G/25G',
-      'Tratamento de Pescoço, Colo, Mãos e Contorno Mandibular Flácido',
-      'Fios de Sustentação e Tração (PDO/PCL): Vetores de Ancoragem e Bloqueio',
-      'Gerenciamento de Nódulos e Prevenção de Assimetrias',
-      'Prática Intensiva em Casos Reais de Flacidez Moderada a Grave'
+      'Biofísica do Plasma Sublimativo e Diferença para Eletrocautério comum',
+      'Anatomia Palpebral e Critérios de Elegibilidade de Pacientes',
+      'Técnica de Spots e Retração Palpebral Superior e Inferior',
+      'Ninfoplastia Não Cirúrgica com Plexr: Protocolos Íntimos Seguros',
+      'Manejo de Crostas, Cuidados Home Care e Fotoproteção Rigorosa',
+      'Atendimento Clínico Supervisionado com Pacientes Fornecidos'
     ],
     includes: [
-      'Fichas de diluição e protocolos exclusivos da Dra. Paula',
+      'Protocolos de pré e pós-procedimento exclusivos da Dra. Paula Fischer',
       'Prática supervisionada individualizada',
-      'Suporte para compras com fornecedores oficiais com condições exclusivas',
-      'Acesso a videoaulas preparatórias antes da imersão',
-      'Certificado de Especialista em Arquitetura de Colágeno'
+      'Certificado de Capacitação Chancelado em Plexr GMW',
+      'Condições de parceria e suporte técnico com a FT Laser Tech'
     ],
     nextDate: '07 de Novembro (Apenas 3 vagas)',
     investmentNote: 'Vagas estritamente limitadas para garantir execução minuciosa.'
   },
   {
+    id: 'capacitacao-protocolo-ortomolecular',
+    title: 'Protocolo Ortomolecular para Estrias e Cicatrizes',
+    subtitle: 'Abordagem Integrativa Sistêmica Associada ao Laser e Plasma',
+    badge: 'Protocolo Exclusivo',
+    duration: '1 Dia de Imersão (8 Horas)',
+    targetAudience: 'Profissionais da estética avançada e integrativa',
+    maxStudents: 4,
+    highlight: 'Tratamento de estrias e cicatrizes antigas e recentes com regeneração tecidual acelerada',
+    description: 'A abordagem integrativa criada pela Dra. Paula Fischer que potencializa os resultados de tecnologias ablativas com suplementação ortomolecular individualizada e ativos de reestruturação dérmica.',
+    modules: [
+      'Bases da Terapia Ortomolecular aplicada à cicatrização e colagênese',
+      'Suplementação Oral e Tópica Pré e Pós-Laser',
+      'Associação Sinergética com Laser CO2 Fusion e Terapia Autóloga',
+      'Protocolos para Estrias Vermelhas, Brancas e Cicatrizes Hipertróficas',
+      'Formulação Magistral e Fichas de Prescrição Prontas'
+    ],
+    includes: [
+      'Guia de Fórmulas e Prescrições Ortomoleculares',
+      'Estudos de casos clínicos documentados',
+      'Certificado de Capacitação em Protocolo Ortomolecular'
+    ],
+    nextDate: '21 de Novembro (Inscrições Abertas)',
+    investmentNote: 'Vagas limitadas por turma.'
+  },
+  {
     id: 'mentoria-individual-vip',
-    title: 'VIP 1-on-1 Mentorship (Exclusivo)',
+    title: 'Mentoria Clínica Individual VIP (Tatuapé - SP)',
     subtitle: 'Um Dia Inteiro Exclusivo ao Lado da Dra. Paula Fischer',
-    badge: '1 Aluno por Edição • Personalizado',
+    badge: '1 Aluno por Edição • 100% Personalizado',
     duration: '1 Dia Completo (Você e a Dra. Paula)',
     targetAudience: 'Profissionais que desejam aceleração máxima sem divisão de tempo',
     maxStudents: 1,
-    highlight: 'Foco nos procedimentos que você mais deseja aperfeiçoar',
-    description: 'A experiência de capacitação mais personalizada do país. A Dra. Paula Fischer dedica a clínica exclusivamente a você, trazendo os casos e técnicas que você precisa dominar com segurança total, ergonomia de injeção e atendimento de alto padrão.',
+    highlight: 'Foco nas tecnologias e procedimentos que você mais deseja aperfeiçoar',
+    description: 'A experiência de imersão mais exclusiva. A Dra. Paula Fischer dedica seu consultório exclusivamente a você, trazendo os casos e tecnologias (Laser CO2, Plexr GMW, Ortomolecular) que você precisa dominar com segurança total.',
     modules: [
-      'Alinhamento prévio das maiores dúvidas e objetivos técnicos do aluno',
-      'Atendimento e planejamento clínico conjunto com a mentora',
-      'Execução direta assistida e corrigida milímetro a milímetro',
-      'Segredos de posicionamento, marketing ético e precificação de luxo',
-      'Gravação em vídeo em alta definição dos seus procedimentos para portfólio',
-      'Acesso direto ao WhatsApp pessoal da Dra. Paula por 6 meses'
+      'Alinhamento prévio das dúvidas técnicas e objetivos do aluno',
+      'Atendimento e parametrização clínica conjunta com a mentora',
+      'Execução assistida com correção imediata de técnica',
+      'Gestão de clínica, precificação de procedimentos de alto valor e suporte FT Laser Tech',
+      'Acesso direto ao WhatsApp da Dra. Paula por 6 meses'
     ],
     includes: [
       'Data flexível conforme disponibilidade da sua agenda',
-      'Pacientes-modelo com perfil clínico pré-definido por você',
-      'Kit instrumental cirúrgico/estético personalizado',
-      'Planejamento de carreira e consultoria de precificação para sua clínica',
+      'Pacientes-modelo selecionados especificamente para suas necessidades',
       'Certificado de Residência de Mentoria Clínica Individual'
     ],
-    nextDate: 'Sob consulta com a coordenação de vagas',
-    investmentNote: 'Processo seletivo prévio mediante análise de currículo profissional.'
-  },
-  {
-    id: 'gestao-clinica-alto-padrao',
-    title: 'Consultório de Alto Padrão & Gestão de Luxo',
-    subtitle: 'Como Atrair Pacientes Particulares de Alto Ticket e Construir Autoridade',
-    badge: 'Online Ao Vivo + Mentoria',
-    duration: '4 Módulos Estratégicos',
-    targetAudience: 'Proprietários de clínicas e consultórios de estética',
-    maxStudents: 15,
-    highlight: 'O método de negócios que transformou um consultório em referência',
-    description: 'Aprenda a estruturar um ecossistema de encantamento que converte consultas avaliativas em planos de tratamento globais de R$ 10k a R$ 35k, sem depender de descontos ou promoções predatórias.',
-    modules: [
-      'Posicionamento de Imagem Médica e Elegância nas Redes Sociais',
-      'Script de Consulta de Encantamento e Fechamento de Alto Valor',
-      'Precificação Lucrativa e Gestão de Custos de Injetáveis',
-      'Treinamento da Equipe e Secretária Concierge para Experiência 5 Estrelas'
-    ],
-    includes: [
-      'Modelos de contratos, termos de consentimento (TCLE) blindados',
-      'Planilhas automáticas de margem e precificação de procedimentos',
-      'Gravações com acesso por 1 ano',
-      'Sessões quinzenais de tira-dúvidas em grupo'
-    ],
-    nextDate: 'Turma de Novembro aberta para inscrições',
-    investmentNote: 'Disponível em lote promocional de lançamento.'
+    nextDate: 'Sob consulta de agenda',
+    investmentNote: 'Processo seletivo prévio mediante análise profissional.'
   }
 ];
 
 export const CLINICAL_PROCEDURES: ClinicalProcedure[] = [
   {
-    id: 'harmonizacao-naturalista',
-    name: 'Harmonização Facial Naturalista',
-    category: 'facial',
-    summary: 'Restauração sutil de volumes perdidos com foco no contorno e frescor.',
-    benefit: 'Aparência descansada e jovial sem distorcer traços naturais.',
-    duration: '60 a 90 minutos',
-    downtime: 'Sem repouso prolongado, retorno imediato à rotina.',
-    idealFor: 'Pessoas com perda de sustentação malar, queixo retraído ou olheiras profundas.',
-    highlights: ['Planejamento milimétrico 3D', 'Uso exclusivo de cânulas macias atraumáticas', 'Ácido hialurônico suíço/americano de alta pureza']
-  },
-  {
-    id: 'protocolo-bioestimulo-360',
-    name: 'Protocolo Bioestímulo de Colágeno 360°',
-    category: 'rejuvenescimento',
-    summary: 'Ativação biológica potente dos fibroblastos para firmeza duradoura.',
-    benefit: 'Melhora progressiva da textura, densidade e sustentação da pele por até 2 anos.',
-    duration: '45 minutos',
-    downtime: 'Mínimo (apenas leve inchaço que regride em 24h).',
-    idealFor: 'Combate à flacidez de rosto, pescoço, papada e prevenção do envelhecimento.',
-    highlights: ['Produtos padrão-ouro (Sculptra / Radiesse)', 'Efeito lifting sem volume indesejado', 'Estímulo de colágeno tipo I']
-  },
-  {
-    id: 'fischer-glow-skin',
-    name: 'Fischer Glow & Remodelamento Cutâneo',
+    id: 'laser-co2-fusion',
+    name: 'Laser CO2 Fracionado Fusion + Terapia Regenerativa',
     category: 'tecnologia',
-    summary: 'Combinação sinérgica de microinfusão de ativos, polinucleotídeos e peeling nanoestruturado.',
-    benefit: 'Luminosidade de seda, fechamento de poros e uniformização do tom.',
-    duration: '50 minutos',
-    downtime: 'Nenhum, pele radiante para eventos e dia a dia.',
-    idealFor: 'Peles desvitalizadas, com linhas finas ou fotoenvelhecimento.',
-    highlights: ['Skinbooster com PDRN de salmão', 'Hidratação de dentro para fora', 'Toque aveludado instantâneo']
+    summary: 'O padrão-ouro absoluto em rejuvenescimento facial profundo, renovação epidérmica e estímulo de colágeno.',
+    benefit: 'Redução expressiva de rugas e linhas de expressão, fechamento de poros, clareamento dérmico e firmeza duradoura.',
+    duration: '60 a 75 minutos',
+    downtime: 'Recuperação guiada com produtos regeneradores (3 a 5 dias de renovação tecidual).',
+    idealFor: 'Rugas moderadas a profundas, flacidez facial, cicatrizes de acne, manchas solares e fotoenvelhecimento.',
+    highlights: [
+      'Fototermólise fracionada de altíssima precisão térmica',
+      'Associação com fatores de crescimento autólogos (PRP)',
+      '"Ciência, Tecnologia, Estética e Resultados Reais"'
+    ]
   },
   {
-    id: 'rejuvenescimento-periorbital',
-    name: 'Rejuvenescimento do Olhar (Olheiras & Pálpebras)',
+    id: 'plexr-blefaroplastia',
+    name: 'Blefaroplastia sem Cortes com Plexr GMW',
     category: 'facial',
-    summary: 'Protocolo exclusivo para desinflamar, clarear e preencher a região dos olhos.',
-    benefit: 'Eliminação daquele aspecto cansado e recuperação do brilho no olhar.',
-    duration: '40 minutos',
-    downtime: 'Leve sensibilidade no primeiro dia.',
-    idealFor: 'Olheiras profundas, sulco nasojugual marcado e bolsas discretas.',
-    highlights: ['Técnica não-cirúrgica indolor', 'Combinação de hialurônico específico e clareador', 'Olhar vívido e descansado']
+    summary: 'Lifting palpebral não cirúrgico realizado com plasma sublimativo de alta frequência, sem cortes e sem bisturi.',
+    benefit: 'Retração precisa da pele flácida das pálpebras superiores e inferiores, rejuvenescendo o olhar sem cirurgia.',
+    duration: '45 a 60 minutos',
+    downtime: 'Pequenas crostas puntiformes que desprendem naturalmente em 5 a 7 dias.',
+    idealFor: 'Flacidez palpebral, excesso de pele periorbital, rugas perioculares e bolsas leves.',
+    highlights: [
+      'Sem anestesia geral — procedimento 100% ambulatorial',
+      'Sublimação tecidual sem sangramento e sem cicatrizes',
+      'Recuperação rápida e olhar rejuvenescido de forma natural'
+    ]
   },
   {
-    id: 'labios-couture',
-    name: 'Escultura Labial Couture',
-    category: 'facial',
-    summary: 'Contorno e hidratação labial desenhados sob a proporção áurea de cada rosto.',
-    benefit: 'Lábios definidos, hidratados e simétricos sem formato exagerado de bico.',
-    duration: '45 minutos',
-    downtime: 'Leve edema por 48 a 72 horas.',
-    idealFor: 'Lábios finos, ressecados ou com perda de volume e arco do cupido desbotado.',
-    highlights: ['Anestesia odontológica para conforto total', 'Técnica de eversão sutil', 'Suavização do código de barras']
-  },
-  {
-    id: 'toxina-preventiva-dinamica',
-    name: 'Toxina Botulínica de Precisão Dinâmica',
+    id: 'manchas-melasma-laser',
+    name: 'Tratamento Avançado de Manchas, Melasma & Uniformização',
     category: 'rejuvenescimento',
-    summary: 'Relaxamento seletivo da musculatura que previne e suaviza linhas de expressão.',
-    benefit: 'Rosto jovem, relaxado e com movimentos naturais preservados.',
-    duration: '30 minutos',
+    summary: 'Protocolo de alta precisão para controle de hipercromias, melasma resistente e manchas solares.',
+    benefit: 'Pele homogênea, clara e luminosa com controle biológico do estresse oxidativo dos melanócitos.',
+    duration: '45 a 50 minutos',
+    downtime: 'Mínimo, pele revitalizada com proteção solar rigorosa.',
+    idealFor: 'Melasma, manchas senis, hiperpigmentação pós-inflamatória e tom irregular da pele.',
+    highlights: [
+      'Despigmentação segura sem efeito rebote',
+      'Associação com laser e dermocosméticos biomédicos',
+      'Resultados clínicos visíveis e comprovados em portfólio'
+    ]
+  },
+  {
+    id: 'protocolo-ortomolecular-cicatrizes',
+    name: 'Cicatrizes & Estrias com Protocolo Ortomolecular',
+    category: 'rejuvenescimento',
+    summary: 'Remodelação profunda de estrias (vermelhas ou brancas) e cicatrizes com associação exclusiva de Laser CO2 e terapia ortomolecular.',
+    benefit: 'Acelera a regeneração dérmica, reestrutura as fibras elásticas e melhora significativamente a textura da pele.',
+    duration: '60 minutos',
+    downtime: 'Acompanhamento dermatofuncional com dermocosméticos ortomoleculares.',
+    idealFor: 'Estrias pós-gestação ou puberdade, cicatrizes de acne atróficas e cicatrizes cirúrgicas antigas.',
+    highlights: [
+      'Protocolo exclusivo desenvolvido pela Dra. Paula Fischer',
+      'Abordagem integrativa e celular de dentro para fora',
+      'Eficácia superior comprovada em cicatrizes rebeldes'
+    ]
+  },
+  {
+    id: 'estetica-intima-plexr',
+    name: 'Estética Íntima & Ninfoplastia sem Cortes com Plexr GMW',
+    category: 'tecnologia',
+    summary: 'Harmonização íntima feminina, clareamento e redução labial não cirúrgica com plasma de alta frequência.',
+    benefit: 'Bem-estar, rejuvenescimento e resgate da autoestima com conforto, privacidade e técnica não invasiva.',
+    duration: '50 a 60 minutos',
+    downtime: 'Procedimento ambulatorial com recuperação rápida e sem internação.',
+    idealFor: 'Hipertrofia de pequenos lábios, flacidez íntima e hiperpigmentação da região vulvar e perianal.',
+    highlights: [
+      'Sem cortes cirúrgicos, sem suturas e sem cicatrizes aparentes',
+      'Realizado sob anestesia local em consultório',
+      'Atendimento 100% humanizado, sigiloso e acolhedor'
+    ]
+  },
+  {
+    id: 'harmonizacao-naturalista',
+    name: 'Harmonização Facial Anatômica & Bioestimuladores',
+    category: 'facial',
+    summary: 'Preenchimento estruturado com ácido hialurônico de alta pureza e estímulo potente de colágeno biológico.',
+    benefit: 'Restauração sutil de volumes, sustentação malar e contorno mandibular sem artificialismo.',
+    duration: '60 minutos',
     downtime: 'Retorno imediato às atividades comuns.',
-    idealFor: 'Pés de galinha, linhas da testa, glabela (entre as sobrancelhas) e sorriso gengival.',
-    highlights: ['Sem efeito congelado ou artificial', 'Durabilidade otimizada', 'Mapeamento das mímicas individuais']
+    idealFor: 'Flacidez tecidual, perda de contorno, sulcos faciais e busca por rejuvenescimento elegante.',
+    highlights: [
+      'Mapeamento tridimensional das proporções faciais',
+      'Uso exclusivo de cânulas atraumáticas de alta segurança',
+      'Preservação incondicional da sua identidade e mímica natural'
+    ]
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
-    author: 'Dra. Mariana Vasconcellos',
-    role: 'Médica Dermatologista • Aluna da Imersão Full Face',
-    city: 'Belo Horizonte - MG',
-    type: 'student',
-    comment: 'Eu tinha muita insegurança ao aplicar em áreas críticas como têmporas e sulco profundo. O treinamento com a Dra. Paula foi o divisor de águas na minha carreira. A atenção individual e os pacientes que atendemos sob a supervisão dela me deram a segurança cirúrgica que nenhum outro curso me ofereceu.',
+    author: 'Maria C.',
+    role: 'Paciente da Clínica • Procedimento Blefaroplastia',
+    city: 'São Paulo - SP',
+    type: 'patient',
+    comment: 'Fiz a blefaroplastia com Plexr GMW com a Dra. Paula e o resultado superou todas as minhas expectativas. Procedimento seguro, sem cortes de bisturi e com recuperação muito mais rápida do que imaginei. Meu olhar rejuvenesceu anos!',
     rating: 5,
-    avatarText: 'MV',
-    metricHighlight: 'Faturamento de procedimentos triplicou em 4 meses'
+    avatarText: 'MC',
+    metricHighlight: 'Olhar descansado sem intervenção cirúrgica'
   },
   {
     id: '2',
-    author: 'Dra. Camila Bittencourt',
-    role: 'Biomédica Esteta • Aluna de Mentoria VIP',
-    city: 'Curitiba - PR',
+    author: 'Ana F.',
+    role: 'Esteticista & Biomédica • Aluna da Imersão Laser CO2',
+    city: 'Campinas - SP',
     type: 'student',
-    comment: 'A Dra. Paula não esconde nenhum detalhe. Ela ensina a arte do diagnóstico e principalmente como agir com precisão caso ocorra qualquer intercorrência. Além da técnica impecável, a postura dela de valorização do atendimento me ensinou a atrair pacientes que valorizam qualidade acima de preço.',
+    comment: 'O curso de Laser CO2 Fracionado Fusion foi transformador para a minha clínica. A Dra. Paula Fischer tem uma didática incomparável — base científica sólida e muita prática supervisionada com equipamento real. Sinto total segurança no atendimento.',
     rating: 5,
-    avatarText: 'CB',
-    metricHighlight: 'Segurança absoluta em procedimentos avançados'
+    avatarText: 'AF',
+    metricHighlight: 'Segurança absoluta para operar laser de alta potência'
   },
   {
     id: '3',
-    author: 'Patrícia Albuquerque',
-    role: 'Empresária • Paciente da Clínica há 4 anos',
+    author: 'Juliana S.',
+    role: 'Paciente da Clínica • Tratamento de Cicatrizes',
     city: 'São Paulo - SP',
     type: 'patient',
-    comment: 'Meu maior medo sempre foi ficar com o rosto modificado ou artificial, como vejo em tantas pessoas por aí. A Dra. Paula tem mãos de fada. As pessoas me elogiam dizendo que pareço 10 anos mais jovem e descansada, mas ninguém diz que fiz procedimento. É uma arte incomparável.',
+    comment: 'Tratei cicatrizes antigas de acne que me incomodavam há anos. Após 3 sessões de Laser CO2 combinadas com o protocolo ortomolecular da Dra. Paula, minha pele está completamente transformada. Uma profissional diferenciada e humana.',
     rating: 5,
-    avatarText: 'PA',
-    metricHighlight: 'Resultado natural e elegante elogiado por todos'
+    avatarText: 'JS',
+    metricHighlight: 'Remodelação total da textura e viço da pele'
   },
   {
     id: '4',
-    author: 'Dr. Leonardo Rezende',
-    role: 'Cirurgião Dentista HOF • Aluno Masterclass Bioestimuladores',
-    city: 'Brasília - DF',
+    author: 'Dra. Camila B.',
+    role: 'Cirurgiã Dentista & Aluna Masterclass Plexr',
+    city: 'Curitiba - PR',
     type: 'student',
-    comment: 'Didática fantástica, organização impecável e materiais de altíssimo nível. A Dra. Paula compartilha os segredos das diluições e o uso do ultrassom que pouquíssimos profissionais no país conhecem com essa profundidade. Vale cada centavo investido.',
+    comment: 'A Dra. Paula Fischer ensina com maestria os limites da segurança e a potência real do plasma sublimativo. A mentoria pós-curso e a facilidade de suporte técnico com a FT Laser Tech elevaram o nível dos serviços que ofereço no meu consultório.',
     rating: 5,
-    avatarText: 'LR',
-    metricHighlight: 'Excelência em anatomia e ecografia estética'
-  },
-  {
-    id: '5',
-    author: 'Renata Sanches de Mello',
-    role: 'Advogada • Paciente da Clínica',
-    city: 'São Paulo - SP',
-    type: 'patient',
-    comment: 'A experiência na clínica é mágica desde o momento em que a equipe nos recebe até o acompanhamento pós-procedimento. Nunca senti dor ou desconforto. Minha pele e contorno mandibular nunca estiveram tão bonitos e firmes.',
-    rating: 5,
-    avatarText: 'RS',
-    metricHighlight: 'Atendimento humanizado 5 estrelas'
+    avatarText: 'CB',
+    metricHighlight: 'Certificação de excelência em tecnologia de plasma'
   }
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: 'Quem pode participar dos treinamentos do Instituto Dra. Paula Fischer?',
-    answer: 'Nossos cursos são estritamente direcionados a profissionais da saúde legalmente autorizados a realizar procedimentos injetáveis em seus respectivos conselhos de classe: Médicos, Biomédicos Estetas, Farmacêuticos Estetas, Cirurgiões-Dentistas habilitados em HOF e Enfermeiros Estetas. Solicitamos a comprovação de registro profissional no ato da inscrição.',
+    question: 'Quem pode participar dos cursos e imersões da Dra. Paula Fischer?',
+    answer: 'Nossos cursos são destinados exclusivamente a profissionais da área da saúde devidamente habilitados: Biomédicos Estetas, Médicos, Farmacêuticos Estetas, Cirurgiões-Dentistas e Fisioterapeutas Dermatofuncionais. A comprovação de registro no conselho é obrigatória para emissão da certificação oficial.',
     category: 'training'
   },
   {
-    question: 'O instituto fornece os pacientes-modelo para a prática hands-on?',
-    answer: 'Sim, integralmente! Nossa equipe clínica realiza a triagem prévia de pacientes reais com diferentes graus de envelhecimento, perfis anatômicos e queixas, garantindo que você pratique em casos clínicos diversificados sob a supervisão direta e milimétrica da Dra. Paula Fischer.',
+    question: 'Como funciona a locação de equipamentos através da FT Laser Tech?',
+    answer: 'A FT Laser Tech disponibiliza equipamentos de última geração (Laser CO2 Fracionado Fusion e Plexr GMW) para diárias ou contratos mensais, com transporte, calibração, insumos e suporte técnico especializado, permitindo que você atenda com tecnologias de ponta sem imobilizar capital.',
     category: 'training'
   },
   {
-    question: 'Quantos alunos participam de cada turma?',
-    answer: 'Trabalhamos com turmas extremamente exclusivas: no máximo 3 a 4 alunos por turma nas Imersões em grupo, e apenas 1 aluno nas mentorias personalizadas 1-on-1. Esse limite rigoroso é o que garante que você pegue na cânula, sinta os planos teciduais e receba feedback em tempo real.',
-    category: 'training'
-  },
-  {
-    question: 'Como funciona o suporte e a mentoria pós-curso?',
-    answer: 'Você não sai do curso sozinho. Todos os alunos são integrados ao Grupo VIP de Mentoria Contínua com a Dra. Paula Fischer por 12 meses. Nele você pode enviar fotos de pacientes, discutir condutas diagnósticas antes de procedimentos e tirar dúvidas em tempo ágil diretamente com a mentora.',
-    category: 'training'
-  },
-  {
-    question: 'Como é realizada a primeira consulta avaliativa na clínica?',
-    answer: 'A consulta com a Dra. Paula tem duração de 60 a 75 minutos. É realizado um exame detalhado das proporções faciais, análise de qualidade da pele e mapeamento das necessidades prioritárias. Desenvolvemos um plano de tratamento personalizado, sem pressa, respeitando seu estilo e orçamento.',
+    question: 'A blefaroplastia sem cortes com Plexr GMW realmente substitui a cirurgia tradicional?',
+    answer: 'Para casos de flacidez palpebral leve a moderada e excesso de pele periorbital, o Plexr GMW é a alternativa mais eficaz do mercado. Ele sublima (evapora) o excesso de tecido sem sangramento, sem cicatriz linear e sem necessidade de centro cirúrgico ou anestesia geral.',
     category: 'clinic'
   },
   {
-    question: 'Os procedimentos doem? É utilizado anestésico?',
-    answer: 'O conforto do paciente é uma prioridade inegociável. Utilizamos anestésicos tópicos manipulados de alta potência e bloqueios anestésicos injetáveis locais indolores (semelhantes aos odontológicos), além de trabalharmos com microcânulas de ponta romba que deslizam pelos tecidos sem cortar vasos.',
+    question: 'O que é o Laser CO2 Fracionado Fusion e como ele atua?',
+    answer: 'É o padrão-ouro internacional em fototermólise seletiva. Ele gera microzonas térmicas na pele, estimulando a síntese de colágeno novo (neocolagênese) e renovando a epiderme, tratando rugas, poros abertos, cicatrizes e manchas com precisão milimétrica.',
     category: 'clinic'
   },
   {
-    question: 'Qual a durabilidade média dos tratamentos com bioestimuladores e preenchedores?',
-    answer: 'Os bioestimuladores de colágeno promovem uma reestruturação celular que permanece no organismo por 18 a 24 meses. Os preenchedores de ácido hialurônico de alta tecnologia mantêm sua sustentação entre 12 e 18 meses, sendo gradualmente absorvidos pelo organismo de forma segura.',
+    question: 'Onde fica localizado o consultório da Dra. Paula Fischer?',
+    answer: 'O consultório e centro de treinamentos está situado no bairro do Tatuapé, em São Paulo - SP, com fácil acesso, estacionamento com manobrista e estrutura de alto padrão para acolhimento e privacidade.',
     category: 'clinic'
   },
   {
-    question: 'Como faço para agendar uma consulta ou solicitar uma vaga em um treinamento?',
-    answer: 'Basta clicar em qualquer botão de agendamento ou preencher nosso formulário de contato VIP nesta página. Nossa concierge exclusiva entrará em contato via WhatsApp para apresentar as datas disponíveis, valores e tirar todas as suas dúvidas.',
+    question: 'Como faço para agendar uma consulta ou solicitar orçamento de curso/locação?',
+    answer: 'Basta entrar em contato pelo nosso WhatsApp oficial (11) 96620-9116 ou preencher o formulário no site. Nossa equipe retornará rapidamente com todas as orientações.',
     category: 'clinic'
   }
 ];
 
 export const CLINIC_CONTACT = {
-  address: 'Av. Brigadeiro Faria Lima, 3477 - Conjunto 1402 - Itaim Bibi, São Paulo - SP',
-  phone: '(11) 98452-1920',
-  whatsappUrl: 'https://wa.me/5511984521920?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Cl%C3%ADnica%20e%20os%20Treinamentos%20VIP%20da%20Dra.%20Paula%20Fischer',
-  email: 'contato@drapaulafischer.com.br',
-  hours: 'Segunda a Sexta: 08:30 às 19:30 • Sábados (Treinamentos VIP): 09:00 às 18:00',
-  instagram: '@drapaulafischer'
+  address: 'Rua Dr. Angelo Vitá, 43 — Sala 01, Tatuapé, São Paulo — SP · CEP 03069-000',
+  shortAddress: 'Tatuapé, São Paulo - SP',
+  phone: '(11) 96620-9116',
+  rawPhone: '11 966209116',
+  whatsappUrl: 'https://wa.me/5511966209116?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20consult%C3%B3rio%20e%20cursos%20da%20Dra.%20Paula%20Fischer',
+  email: 'dra.paulafischerbiomedica@gmail.com',
+  hours: 'Segunda a Sexta: 08:30 às 19:30 • Sábados (Imersões VIP): 09:00 às 18:00',
+  instagram: '@drapaulafischer',
+  instagramUrl: 'https://www.instagram.com/drapaulafischer/',
+  slogan: 'Natureza com Precisão Científica',
+  equipmentPartner: 'FT Laser Tech'
 };

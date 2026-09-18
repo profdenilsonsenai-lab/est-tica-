@@ -41,7 +41,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
       ? `Olá equipe Dra. Paula Fischer! Meu nome é ${name}, sou ${profession || 'profissional da saúde'} e tenho interesse no treinamento: "${selectedCourseOrProc || 'Geral'}". Meu WhatsApp é ${phone} e prefiro contato no período da ${period}. Mensagem adicional: ${notes || 'Sem observações'}`
       : `Olá equipe Dra. Paula Fischer! Meu nome é ${name} e gostaria de agendar uma consulta avaliativa para o procedimento: "${selectedCourseOrProc || 'Avaliação Global'}". Meu WhatsApp é ${phone} e prefiro contato no período da ${period}. Observação: ${notes || 'Sem observações'}`;
 
-    const waUrl = `https://wa.me/5511984521920?text=${encodeURIComponent(msg)}`;
+    const waUrl = `https://wa.me/5511966209116?text=${encodeURIComponent(msg)}`;
     window.open(waUrl, '_blank');
   };
 
@@ -106,11 +106,30 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
 
               <div className="flex items-start gap-3.5">
                 <div className="w-8 h-8 rounded-full bg-[#2E241E] flex items-center justify-center shrink-0 text-[#D8B46C] border border-[#473B32]">
+                  <Mail className="w-4 h-4" />
+                </div>
+                <div>
+                  <strong className="block text-white mb-0.5">E-mail Direto:</strong>
+                  <a href={`mailto:${CLINIC_CONTACT.email}`} className="text-[#D8B46C] hover:underline">
+                    {CLINIC_CONTACT.email}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3.5">
+                <div className="w-8 h-8 rounded-full bg-[#2E241E] flex items-center justify-center shrink-0 text-[#D8B46C] border border-[#473B32]">
                   <Instagram className="w-4 h-4" />
                 </div>
                 <div>
                   <strong className="block text-white mb-0.5">Instagram Oficial:</strong>
-                  <span>{CLINIC_CONTACT.instagram}</span>
+                  <a
+                    href={CLINIC_CONTACT.instagramUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#D8B46C] hover:underline"
+                  >
+                    {CLINIC_CONTACT.instagram}
+                  </a>
                 </div>
               </div>
             </div>
@@ -230,7 +249,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                     </label>
                     <input
                       type="text"
-                      placeholder={interest === 'training' ? 'Ex: Médica / CRM 12345' : 'Ex: São Paulo - SP'}
+                      placeholder={interest === 'training' ? 'Ex: Biomédica / CRBM 12345 (ou CRM/CRO)' : 'Ex: São Paulo - SP'}
                       value={profession}
                       onChange={(e) => setProfession(e.target.value)}
                       className="w-full p-3 rounded-xl bg-[#1C1816] border border-[#3E342E] text-white text-xs placeholder-[#736359] focus:outline-hidden focus:border-[#D8B46C]"
@@ -324,7 +343,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({
                 </button>
 
                 <p className="text-[11px] text-center text-[#99877C] leading-tight">
-                  Seus dados estão protegidos sob sigilo médico e confidencialidade.
+                  Seus dados estão protegidos sob sigilo profissional e confidencialidade clínica.
                 </p>
               </form>
             )}

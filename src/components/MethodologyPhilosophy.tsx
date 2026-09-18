@@ -1,6 +1,6 @@
 import React from 'react';
-import { ShieldAlert, Activity, Sparkles, Stethoscope, Lock, CheckCircle2 } from 'lucide-react';
-import clinicInteriorPhoto from '../assets/images/clinic_interior_spa_1789684334548.jpg';
+import { ShieldCheck, Activity, Sparkles, Zap, Dna, CheckCircle2, Award } from 'lucide-react';
+import draPaulaConsultaPhoto from '../assets/images/dra_paula_fischer_consulta.jpg';
 
 export const MethodologyPhilosophy: React.FC = () => {
   return (
@@ -10,63 +10,62 @@ export const MethodologyPhilosophy: React.FC = () => {
           {/* Left Column: Narrative & Pillars */}
           <div className="lg:col-span-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F4EFE6] text-[#8C6D37] text-xs font-semibold uppercase tracking-widest mb-4">
-              <ShieldAlert className="w-3.5 h-3.5 text-[#9E7835]" />
-              Segurança Máxima & Precisão Tecnológica
+              <ShieldCheck className="w-3.5 h-3.5 text-[#2D4A2D]" />
+              Ciência, Tecnologia & Resultados Reais
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-[#1F1916] mb-6 tracking-tight leading-tight">
-              Onde a sofisticação encontra o padrão cirúrgico de segurança.
+              Onde a sofisticação encontra o rigor científico de alta tecnologia.
             </h2>
 
             <p className="text-base text-[#544740] leading-relaxed mb-8">
-              Na estética moderna, não há mais espaço para atuações às cegas. 
-              Tanto no atendimento clínico aos nossos pacientes quanto na formação 
-              de nossos alunos no instituto, aplicamos protocolos de segurança que são 
-              referência acadêmica internacional.
+              Na estética moderna, não há mais espaço para atuações empíricas ou padronizadas. 
+              Tanto no atendimento clínico aos pacientes quanto na formação de profissionais da saúde, 
+              a <strong>Dra. Paula Fischer</strong> aplica protocolos fundamentados em biofísica, farmacologia e evidências clínicas.
             </p>
 
             <div className="space-y-6">
               <div className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-xl bg-[#F7F2EA] flex items-center justify-center shrink-0 text-[#9E7835] border border-[#E8DFC8]">
+                <div className="w-10 h-10 rounded-xl bg-[#F7F2EA] flex items-center justify-center shrink-0 text-[#2D4A2D] border border-[#E8DFC8]">
+                  <Zap className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-serif font-semibold text-lg text-[#1F1916] mb-1">
+                    Laser CO2 Fracionado Fusion & Fototermólise Seletiva
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#61534B] leading-relaxed">
+                    Microcolunas de energia térmica com precisão absoluta, promovendo remodelamento profundo do colágeno, 
+                    renovação epidérmica e tratamento eficaz de cicatrizes e rugas.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="w-10 h-10 rounded-xl bg-[#F7F2EA] flex items-center justify-center shrink-0 text-[#2D4A2D] border border-[#E8DFC8]">
                   <Activity className="w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="font-serif font-semibold text-lg text-[#1F1916] mb-1">
-                    Ultrassonografia Dermatológica de Alta Resolução
+                    Plasma Sublimativo Plexr GMW (Sem Cortes)
                   </h3>
                   <p className="text-xs sm:text-sm text-[#61534B] leading-relaxed">
-                    Identificação ecográfica prévia de trajetos vasculares arteriais, profundidade muscular 
-                    e preenchedores prévios, eliminando qualquer risco de oclusão.
+                    Tecnologia de plasma de alta frequência que atua sem contato direto com a pele, criando microlesões 
+                    controladas que retraem pálpebras (blefaroplastia) e pequenos lábios sem bisturi e sem cicatrizes.
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-xl bg-[#F7F2EA] flex items-center justify-center shrink-0 text-[#9E7835] border border-[#E8DFC8]">
-                  <Stethoscope className="w-5 h-5" />
+                <div className="w-10 h-10 rounded-xl bg-[#F7F2EA] flex items-center justify-center shrink-0 text-[#2D4A2D] border border-[#E8DFC8]">
+                  <Dna className="w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="font-serif font-semibold text-lg text-[#1F1916] mb-1">
-                    Protocolo Fischer de Blindagem em Intercorrências
+                    Protocolo Ortomolecular para Estrias & Cicatrizes
                   </h3>
                   <p className="text-xs sm:text-sm text-[#61534B] leading-relaxed">
-                    Farmacologia avançada, cálculo preciso de hialuronidase de alta dispersão e suporte 
-                    imediato. Ensinamos e praticamos a conduta médica baseada em evidências.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-xl bg-[#F7F2EA] flex items-center justify-center shrink-0 text-[#9E7835] border border-[#E8DFC8]">
-                  <Lock className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-serif font-semibold text-lg text-[#1F1916] mb-1">
-                    Exclusividade e Sigilo Absoluto
-                  </h3>
-                  <p className="text-xs sm:text-sm text-[#61534B] leading-relaxed">
-                    Salas privativas com isolamento acústico, entrada reservada e atendimento com intervalo 
-                    estendido entre cada paciente para garantir discrição total.
+                    Abordagem integrativa que potencializa os resultados do laser e plasma com suporte ortomolecular individualizado, 
+                    acelerando a regeneração celular de forma segura e duradoura.
                   </p>
                 </div>
               </div>
@@ -78,24 +77,23 @@ export const MethodologyPhilosophy: React.FC = () => {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-[#E5DAC8]">
                 <img
-                  src={clinicInteriorPhoto}
-                  alt="Espaço da Clínica e Instituto Dra. Paula Fischer"
-                  className="w-full h-[420px] sm:h-[500px] object-cover"
+                  src={draPaulaConsultaPhoto}
+                  alt="Dra. Paula Fischer em consulta clínica individualizada no Tatuapé"
+                  className="w-full aspect-[4/3] object-cover object-center"
                   referrerPolicy="no-referrer"
                 />
               </div>
 
               {/* Float info card */}
               <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-6 rounded-2xl border border-[#E5DAC8] shadow-xl max-w-xs sm:max-w-sm hidden sm:block">
-                <div className="flex items-center gap-2 mb-2 text-[#9E7835]">
-                  <Sparkles className="w-4 h-4" />
-                  <span className="text-[11px] font-bold uppercase tracking-wider">
-                    Conforto 5 Estrelas
+                <div className="flex items-center gap-2 mb-2 text-[#2D4A2D]">
+                  <Sparkles className="w-4 h-4 text-[#B8986A]" />
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#1F1916]">
+                    Dra. Paula Fischer • CRBM 57426
                   </span>
                 </div>
                 <p className="text-xs text-[#52463F] leading-relaxed font-medium">
-                  Arquitetura concebida para proporcionar desaceleração, bem-estar e uma experiência 
-                  hospitalar boutique em São Paulo.
+                  "Ciência • Tecnologia • Estética • Resultados Reais — Saúde, Beleza e Autoestima." Consultório no Tatuapé, São Paulo - SP.
                 </p>
               </div>
             </div>
