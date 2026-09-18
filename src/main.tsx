@@ -1,10 +1,17 @@
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import App from './App.tsx';
 import './index.css';
 
+ReactGA.initialize('G-HYLLNWR706');
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 );
+

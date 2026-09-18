@@ -3,7 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AboutDoctor } from './components/AboutDoctor';
@@ -19,10 +21,15 @@ import { ContactModal } from './components/ContactModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
+  const location = useLocation();
   const [activeTarget, setActiveTarget] = useState<'all' | 'training' | 'clinic'>('all');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalInterest, setModalInterest] = useState<'training' | 'clinic'>('training');
   const [modalSelectedItem, setModalSelectedItem] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+  }, [location]);
 
   const handleOpenContactModal = (interest: 'training' | 'clinic' = 'training', selectedItem?: string) => {
     setModalInterest(interest);
